@@ -1,0 +1,41 @@
+<main>
+    <div class="opciones">
+        <div class="titulo">
+            <p style="color: darkgrey; margin-right: 20px !important;" class="flotante">01 </p>
+            <p id="txtP" class="flotante"> PICK YOUR DESTINATION</p>
+        </div>
+        <br>
+        <img class="imgdestino" src="{{imagenDestino}}" alt="ImagenDestino">
+    </div>
+    <div class="txt">
+        <ul>
+            <li [ngStyle]="{'box-shadow':bordeMoon}" class="bordeDestination" (click)="moon()">MOON</li>
+            <li [ngStyle]="{'box-shadow':bordeMars}" class="bordeDestination" (click)="mars()">MARS</li>
+            <li [ngStyle]="{'box-shadow':bordeEuropa}" class="bordeDestination" (click)="europa()">EUROPA</li>
+            <li [ngStyle]="{'box-shadow':bordeTitan}" class="bordeDestination" (click)="titan()">TITAN</li>
+        </ul>
+        <br>
+        <div cass="info">
+            <br>
+            <p id="nombre">{{nombreDestination}}</p>
+            <br>
+            <p id="descripcion">{{descripcionDestination}}</p>
+            <br>
+            <div id="linea"></div>
+            <br>
+            <div class="div-Distacia">
+                <div class="avg ">
+
+                    <p>AVG. DISTANCE</p>
+                    <p class="datosinfo" id="distancia">{{distanicaDestination}}</p>
+                </div>
+                <div class="est ">
+
+                    <p>EST. TRAVEL TIME</p>
+                    <p class="datosinfo" id="viaje">{{viajeDestination}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

@@ -1,0 +1,243 @@
+    div {
+        color: white;
+    }
+    
+    @keyframes animationJAnk {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
+    
+    main {
+        animation-name: animationJank;
+        animation-duration: 0.5s;
+    }
+    
+    @media (min-width: 320px) {
+        main {
+            text-align: initial;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .opciones {
+            width: 70px;
+            height: 70px;
+            background-color: #fff0;
+            border-radius: 70px;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            cursor: pointer;
+            border: 1px solid gray;
+            float: left;
+            margin-left: 2rem;
+        }
+        .divContenidoNum {
+            margin-top: 4rem;
+        }
+        .txt {
+            margin-top: 70px;
+        }
+        .float {
+            float: none;
+            margin: 0;
+            font-size: 20px;
+        }
+        #gray {
+            color: gray;
+            margin-right: 20px;
+        }
+        #titulo {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .p2 {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin: 0;
+        }
+        .right img {
+            width: 90%;
+        }
+        #titulo p {
+            float: left;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .right {
+            margin: 4rem auto;
+            text-align: center;
+        }
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        main {
+            text-align: initial;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .opciones {
+            width: 70px;
+            height: 70px;
+            background-color: #fff0;
+            border-radius: 70px;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            cursor: pointer;
+            border: 1px solid gray;
+            float: left;
+            margin-left: 2rem;
+        }
+        .divContenidoNum {
+            margin-top: 4rem;
+        }
+        .txt {
+            margin-top: 70px;
+        }
+        .float {
+            float: none;
+            margin: 0;
+            font-size: 20px;
+        }
+        #gray {
+            color: gray;
+            margin-right: 20px;
+        }
+        #titulo {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .p2 {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin: 0;
+        }
+        .p3 {
+            padding-right: 50px;
+            line-height: 25px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        div div img {
+            width: 43vh;
+        }
+        #titulo p {
+            float: left;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .right {
+            margin: 4rem auto;
+        }
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (min-width: 1281px) {
+        main {
+            text-align: initial;
+            display: flex;
+            flex-direction: row;
+            height: 91vh;
+        }
+        .divContenidoNum {
+            display: flex;
+            flex-direction: column;
+        }
+        #gray {
+            color: gray;
+            margin-right: 20px;
+        }
+        .opciones {
+            width: 70px;
+            height: 70px;
+            background-color: #fff0;
+            border-radius: 70px;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            cursor: pointer;
+            border: 1px solid gray;
+            margin-bottom: 2rem;
+        }
+        .opciones p {
+            margin: 0;
+            margin-top: 20px;
+        }
+        #titulo {
+            display: inline-block;
+            font-size: 20px;
+            margin: 0;
+            margin-left: 0px;
+            margin-left: -21rem;
+        }
+        #titulo p {
+            float: left;
+        }
+        .contenido {
+            margin-top: 7rem;
+            display: flex;
+            flex-direction: row;
+        }
+        .txt {
+            width: 500px;
+            margin-left: 90px;
+            margin-top: 0;
+            text-align: left;
+        }
+        .p2 {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin: 0;
+        }
+        .p3 {
+            padding-right: 50px;
+            line-height: 25px;
+            padding-left: 0;
+            margin: 0;
+        }
+        div div img {
+            right: 0;
+            position: absolute;
+            margin-top: -120px;
+            width: 60vh;
+        }
+        .left {
+            margin-left: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .right img {
+            margin-left: auto;
+        }
+    }

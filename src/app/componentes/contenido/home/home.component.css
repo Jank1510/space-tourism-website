@@ -1,0 +1,150 @@
+@keyframes animationJAnk {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+main {
+    color: white;
+    animation-name: animationJank;
+    animation-duration: 0.5s;
+}
+
+.float {
+    float: left;
+}
+
+@media (min-width: 320px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenedorCirculo {
+        margin: 0 auto;
+    }
+    .txt {
+        width: 85%;
+        margin-top: 3rem;
+    }
+    .txt1 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .txt2 {
+        font-size: 80px;
+        margin: 20px 0 35px 0;
+    }
+    .txt3 {
+        line-height: 30px;
+        font-size: 17px;
+        margin: 0;
+    }
+    .imagenCirculo {
+        width: 255px;
+        height: 255px;
+        border-radius: 200px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5.75rem 0;
+    }
+    .circulotxt {
+        color: black;
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorCirculo {
+        margin: 0 auto;
+    }
+    .txt {
+        width: 70%;
+        text-align: center;
+        margin-top: 8rem;
+    }
+    .txt1 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .txt2 {
+        font-size: 148px;
+        margin: 0 0 15px 0;
+    }
+    .txt3 {
+        line-height: 30px;
+        font-size: 17px;
+        margin: 0;
+    }
+    .imagenCirculo {
+        width: 255px;
+        height: 255px;
+        border-radius: 200px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5.75rem;
+    }
+    .circulotxt {
+        color: black;
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 1281px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedorCirculo {
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+    .txt {
+        width: 520px;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+    .txt1 {
+        font-size: 28px;
+        margin: 0;
+    }
+    .txt2 {
+        font-size: 148px;
+        margin: 0 0 15px 0;
+    }
+    .txt3 {
+        line-height: 30px;
+        font-size: 17px;
+        margin: 0;
+    }
+    .imagenCirculo {
+        width: 255px;
+        height: 255px;
+        border-radius: 200px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5.75rem;
+    }
+    .circulotxt {
+        color: black;
+        font-size: 29px;
+    }
+}

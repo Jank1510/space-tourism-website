@@ -1,0 +1,24 @@
+<main>
+    <div id="info">
+        <div id="txt1">
+            <p id="p1">02</p>
+            <p>MEET YOUR CREW</p>
+        </div>
+        <div id="txt2">
+            <p id="role">{{role}}</p>
+            <br>
+            <p id="name">{{name}}</p>
+            <br>
+            <p id="bio">{{bio}}</p>
+        </div>
+        <div id="txt3">
+            <div [ngStyle]="{'background-color':selecPrimero}" class="btn" (click)="primero()"></div>
+            <div [ngStyle]="{'background-color':selecSegundo}" class="btn" (click)="segundo()"></div>
+            <div [ngStyle]="{'background-color':selecTercero}" class="btn" (click)="tercero()"></div>
+            <div [ngStyle]="{'background-color':selecCuarto}" class="btn" (click)="cuarto()"></div>
+        </div>
+    </div>
+    <div id="img">
+        <img src="{{imgCrew}}" alt="">
+    </div>
+</main>
