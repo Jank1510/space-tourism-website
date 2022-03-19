@@ -1,9 +1,11 @@
 # space-tourism-website
 space-tourism-website CHALLENGE
 
-# Project Link :
+# Project Link:
 https://jank1510.github.io/space-tourism-website/
 
+# Description:
+Multi page space tourism website with specific details getting the data from a .JSON developed in angular
 
 # Preview Image:
 <p align='center'> 
