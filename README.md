@@ -1,5 +1,5 @@
 # space-tourism-website
-space-tourism-website CHALLENGE
+space-tourism-website CHALLENGE finalizado ☑
 
 # Project Link:
 https://jank1510.github.io/space-tourism-website/
