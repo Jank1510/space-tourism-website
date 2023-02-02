@@ -20,5 +20,5 @@
 Multi page space tourism website with specific details getting the data from a .JSON developed in angular, using aos librery animation.
  
 
-**To do this challenge, you need a basic understanding of HTML CSS and JavaScript.**
+**To do this challenge, you need a basic understanding of HTML CSS JavaScript, TypeScrip and Angular.**
  
