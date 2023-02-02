@@ -2,6 +2,7 @@
     from {
         opacity: 0%;
     }
+
     to {
         opacity: 100%;
     }
@@ -17,7 +18,62 @@ main {
     float: left;
 }
 
+.imagenCirculo { 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.imagenCirculo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0vw 0vw 0vw 8vw #ffffff21;
+    border-radius: 100%;
+    animation: animationExplorerAfter 1s  ; 
+    display: none;
+
+}
+
+.imagenCirculo::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0vw 0vw 0vw 4vw #ffffff3d;
+    animation: animationExplorerBefore 1s  ; 
+display: none;
+}
+.imagenCirculo:hover::after{
+    display: block;
+ }
+ .imagenCirculo:hover::before{
+    display: block;
+ }
+@keyframes animationExplorerBefore {
+    
+    from {box-shadow: 0vw 0vw 0vw 0vw #ffffff3d;}
+
+    to {box-shadow: 0vw 0vw 0vw 4vw #ffffff3d;}
+
+}
+@keyframes animationExplorerAfter {
+    
+    from {box-shadow: 0vw 0vw 0vw 0vw #ffffff21;}
+
+    to {box-shadow: 0vw 0vw 0vw 8vw #ffffff21;}
+
+}
 @media (min-width: 320px) {
+    .imagenCirculo {
+        width: 255px;
+        height: 255px;
+        border-radius: 200px;}
     main {
         display: flex;
         flex-direction: column;
@@ -25,36 +81,36 @@ main {
         align-items: center;
         text-align: center;
     }
+
     .contenedorCirculo {
         margin: 0 auto;
     }
+
     .txt {
         width: 85%;
         margin-top: 3rem;
     }
+
     .txt1 {
         font-size: 16px;
         margin: 0;
     }
+
     .txt2 {
         font-size: 80px;
         margin: 20px 0 35px 0;
     }
+
     .txt3 {
         line-height: 30px;
         font-size: 17px;
         margin: 0;
     }
+
     .imagenCirculo {
-        width: 255px;
-        height: 255px;
-        border-radius: 200px;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: 5.75rem 0;
     }
+
     .circulotxt {
         color: black;
         font-size: 29px;
@@ -68,37 +124,37 @@ main {
         justify-content: center;
         align-items: center;
     }
+
     .contenedorCirculo {
         margin: 0 auto;
     }
+
     .txt {
         width: 70%;
         text-align: center;
         margin-top: 8rem;
     }
+
     .txt1 {
         font-size: 20px;
         margin: 0;
     }
+
     .txt2 {
         font-size: 148px;
         margin: 0 0 15px 0;
     }
+
     .txt3 {
         line-height: 30px;
         font-size: 17px;
         margin: 0;
     }
+
     .imagenCirculo {
-        width: 255px;
-        height: 255px;
-        border-radius: 200px;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 5.75rem;
     }
+
     .circulotxt {
         color: black;
         font-size: 29px;
@@ -106,45 +162,44 @@ main {
 }
 
 @media (min-width: 1281px) {
+    .imagenCirculo {
+        width: 19vw;
+        height: 19vw;
+        border-radius: 19vw;}
     main {
         display: flex;
         flex-direction: row;
+        height: 100vh;
     }
+
     .contenedorCirculo {
         margin: 0 auto;
-        margin-top: 10rem;
     }
+
     .txt {
-        width: 520px;
+        width: 37vw;
         text-align: left;
         margin: 0 auto;
-        margin-top: 10rem;
     }
+
     .txt1 {
-        font-size: 28px;
+        font-size: 2vw;
         margin: 0;
     }
+
     .txt2 {
-        font-size: 148px;
-        margin: 0 0 15px 0;
+        font-size: 10.35vw;
+        margin: 0 0 1vw 0;
     }
+
     .txt3 {
-        line-height: 30px;
-        font-size: 17px;
+        line-height: 2vw;
+        font-size: 1.2vw;
         margin: 0;
     }
-    .imagenCirculo {
-        width: 255px;
-        height: 255px;
-        border-radius: 200px;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5.75rem;
-    }
+
     .circulotxt {
         color: black;
-        font-size: 29px;
+        font-size: 2.1vw;
     }
 }

@@ -1,14 +1,12 @@
 <main>
-    <div id="info">
+    <div data-aos="zoom-out" id="info">
         <div id="txt1">
             <p id="p1">02</p>
             <p>MEET YOUR CREW</p>
         </div>
-        <div id="txt2">
-            <p id="role">{{role}}</p>
-            <br>
-            <p id="name">{{name}}</p>
-            <br>
+        <div id="txt2" [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}">
+            <p id="role">{{role}}</p> 
+            <p id="name">{{name}}</p> 
             <p id="bio">{{bio}}</p>
         </div>
         <div id="txt3">
@@ -18,7 +16,7 @@
             <div [ngStyle]="{'background-color':selecCuarto}" class="btn" (click)="cuarto()"></div>
         </div>
     </div>
-    <div id="img">
-        <img src="{{imgCrew}}" alt="">
+    <div id="img" [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}">
+        <img src="{{imgCrew}}"  alt="">
     </div>
 </main>

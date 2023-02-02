@@ -1,5 +1,5 @@
 <main>
-    <div class="left">
+    <div data-aos="fade-right" class="left">
         <div id="titulo">
             <p id="gray" class="float">03</p>
             <p class="float">SPACE LAUNCH 101</p>
@@ -9,8 +9,8 @@
                 <div (click)="uno()" [ngStyle]="{'background-color':colorUno , 'color':colorUnotxt}" class="opciones">
                     <p>1</p>
                 </div>
-                <div (click)="dos()" [ngStyle]="{'color':colorDostxt ,'background-color':colorDos}" class="opciones">
-                    <p>2</p>
+                <div  (click)= "dos()" [ngStyle]="{'color':colorDostxt ,'background-color':colorDos}" class="opciones">
+                    <p >2</p>
                 </div>
                 <div (click)="tres()" [ngStyle]="{'color':colorTrestxt , 'background-color':colorTres}" class="opciones">
                     <p>3</p>
@@ -18,12 +18,12 @@
             </div>
             <div class="txt">
                 <p class="p1">THE TERMINOLOGY...</p>
-                <p class="p2">{{name}}</p>
-                <p class="p3">{{description}}</p>
+                <p [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}" class="p2">{{name}}</p>
+                <p [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}" class="p3">{{description}}</p>
             </div>
-        </div>
+        </div> 
     </div>
-    <div class="right">
+    <div [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}"  class="right">
         <img src="{{img}}" alt="Imagen de la tecnologia">
     </div>
 </main>

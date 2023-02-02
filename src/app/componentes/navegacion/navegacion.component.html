@@ -3,7 +3,7 @@
     <div>
         <img src="./assets/shared/logo.svg" alt="logo">
     </div>
-    <nav>
+    <nav data-aos="fade-left"> 
         <div id="liniaNav"></div>
 
         <div *ngIf="ocultarNav">
@@ -12,25 +12,18 @@
                 <li [ngStyle]="{'box-shadow': barradestination}" (click)="DESTINATION()"><b>01</b> DESTINATION</li>
                 <li [ngStyle]="{'box-shadow': barracrew}" (click)="CREW()"><b>02</b> CREW</li>
                 <li [ngStyle]="{'box-shadow': barratechnology}" (click)="TECHNOLOGY()"><b>03</b> TECHNOLOGY</li>
-            </ul>
-            <br>
+            </ul> 
         </div>
         <div *ngIf="ocultarNavHamburger" id="menuHamburgesa">
             <img id="menu" src="./assets/shared/icon-hamburger.svg" alt="menuHamburgesa" (click)="MostrarContenido()">
-            <br>
+             
             <ul *ngIf="ocultarContenidoHamburger">
-                <li class="li1" (click)="HOME()"><b>00</b> HOME</li>
-                <br>
-                <div class="lineaNAV"></div>
-                <br>
-                <li (click)="DESTINATION()"><b>01</b> DESTINATION</li>
-                <br>
-                <div class="lineaNAV"></div>
-                <br>
-                <li (click)="CREW()"><b>02</b> CREW</li>
-                <br>
-                <div class="lineaNAV"></div>
-                <br>
+                <li class="li1" (click)="HOME()"><b>00</b> HOME</li> 
+                <div class="lineaNAV"></div> 
+                <li (click)="DESTINATION()"><b>01</b> DESTINATION</li> 
+                <div class="lineaNAV"></div> 
+                <li (click)="CREW()"><b>02</b> CREW</li> 
+                <div class="lineaNAV"></div> 
                 <li (click)="TECHNOLOGY()"><b>03</b> TECHNOLOGY</li>
             </ul>
         </div>

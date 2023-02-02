@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
+import * as AOS from 'aos';
 
 
 @Component({
@@ -9,6 +10,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'space-tourism-website';
 
+  ngOnInit(): void {
+    AOS.init()
+
+    window.addEventListener('load',AOS.refresh)
+  }
   imgFondo: any
 
   constructor() { }
@@ -19,9 +25,9 @@ export class AppComponent {
   PixelesPantalla() {
     var pantalla = document.getElementById("pantalla")
     var pxpantalla = (pantalla?.clientWidth)
-    
+
     return pxpantalla
   }
-  
+
 
 }

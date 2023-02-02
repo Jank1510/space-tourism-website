@@ -1,11 +1,12 @@
 <main>
-    <div class="opciones">
+    <div data-aos="fade-up" class="opciones">
         <div class="titulo">
-            <p style="color: darkgrey; margin-right: 20px !important;" class="flotante">01 </p>
+            <p class="flotante p01">01 </p>
             <p id="txtP" class="flotante"> PICK YOUR DESTINATION</p>
         </div>
-        <br>
-        <img class="imgdestino" src="{{imagenDestino}}" alt="ImagenDestino">
+        <div  class="estructuraImg">
+            <img [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}" class="imgdestino animation" src="{{imagenDestino}}" alt="ImagenDestino">
+            </div>
     </div>
     <div class="txt">
         <ul>
@@ -14,18 +15,12 @@
             <li [ngStyle]="{'box-shadow':bordeEuropa}" class="bordeDestination" (click)="europa()">EUROPA</li>
             <li [ngStyle]="{'box-shadow':bordeTitan}" class="bordeDestination" (click)="titan()">TITAN</li>
         </ul>
-        <br>
-        <div cass="info">
-            <br>
+        <div data-aos="zoom-in" class="info animation" [ngStyle]="{'display':displayAnimation,'animation-name':nameAnimation}">
             <p id="nombre">{{nombreDestination}}</p>
-            <br>
             <p id="descripcion">{{descripcionDestination}}</p>
-            <br>
             <div id="linea"></div>
-            <br>
             <div class="div-Distacia">
                 <div class="avg ">
-
                     <p>AVG. DISTANCE</p>
                     <p class="datosinfo" id="distancia">{{distanicaDestination}}</p>
                 </div>
@@ -35,7 +30,6 @@
                     <p class="datosinfo" id="viaje">{{viajeDestination}}</p>
                 </div>
             </div>
-
         </div>
     </div>
 </main>

@@ -85,10 +85,8 @@ header {
         float: left;
         margin-left: 20px;
     }
-    nav {
-        float: right;
-        background-color: rgba(80, 86, 91, 0.57);
-        color: white;
+    nav { 
+        background-color: rgba(80, 86, 91, 0.57); 
         padding-right: 40px;
     }
     header nav div ul li b {
@@ -108,17 +106,13 @@ header {
 }
 
 @media (min-width: 1281px) {
-    nav div ul li {
-        cursor: pointer;
-        float: left;
-        margin-left: 20px;
+    nav div ul li { 
+        margin-left: 1.5vw;
+        font-size: 1.15vw;
     }
-    nav {
-        float: right;
+    nav { 
         padding-right: 10%;
-        padding-left: 2%;
-        background-color: rgba(80, 86, 91, 0.57);
-        color: white;
+        padding-left: 2%; 
         margin: 0;
     }
     header nav div ul li b {
@@ -126,21 +120,20 @@ header {
         width: auto;
     }
     header {
-        margin-top: 15px;
+        margin-top: 1vw;
     }
     header div img {
-        margin: 15px 0 0 45px;
+        margin:1vw 0 0 3vw;
+        width: 3.5vw;
     }
-    #liniaNav {
-        width: 33%;
-        height: 3px;
+    #liniaNav {width: 33%;
+        height: 0.2vw;
         background-color: rgba(80, 86, 91, 0.57);
         position: absolute;
-        margin: 34px 0 0 -33%;
+        margin: 2.1vw 0 0 -33%;
     }
-    nav div ul {
-        margin-top: 25px;
-        margin-bottom: 18.2px;
-        padding-left: 55px;
+    nav div ul {margin-top: 1.6vw;
+        margin-bottom: 1.3vw;
+        padding-left: 3.5vw;
     }
 }

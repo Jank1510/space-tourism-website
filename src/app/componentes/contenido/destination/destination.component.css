@@ -2,29 +2,57 @@
     width: 80%;
 }
 
-@keyframes animationJAnk {
+@keyframes openEfect {
     from {
         opacity: 0%;
     }
+
     to {
         opacity: 100%;
     }
 }
 
+@keyframes openEfectReverse {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+} 
 main {
-    animation-name: animationJank;
+    animation-name: openEfect;
     animation-duration: 0.5s;
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 
+.animation {
+    animation-duration: 0.25s;
+
+}
+ 
+
+
+
 @media (min-width: 320px) {
+
     li {
         float: left;
         margin-right: 2%;
+    }
+    .info {
+        height: auto;
+        width: auto;
     }
     .bordeDestination {
         cursor: pointer;
         padding: 1%;
     }
+
     .txt {
         display: flex;
         flex-direction: column;
@@ -32,94 +60,108 @@ main {
         width: 90%;
         margin: 0 auto;
     }
+
     main {
-        color: white;
-        display: flex;
-        width: 100%;
         flex-direction: column;
+        margin-top: 5rem;
     }
+
     ul {
         display: flex;
         justify-content: center;
     }
+
     .titulo {
         display: flex;
     }
+
     ul {
         padding: 0;
     }
+
     .opciones {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .imgdestino {
         width: 80%;
+    }
+
+    .p01 {
+        color: darkgrey;
+        margin-right: 20px !important;
+    }
+    .estructuraImg {
+        height: auto;
+        display: flex;
+    align-items: center;
+    justify-content: center;
     }
 }
 
 @media (min-width: 768px) {
     li {
-        float: left;
         margin-right: 20px;
     }
+
     .bordeDestination {
-        cursor: pointer;
         padding: 7px;
     }
+
     .txt {
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
-    main {
-        color: white;
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    }
+
+
     .info {
         width: 80%;
     }
+
     .titulo p {
         margin-left: 0.7rem;
     }
+
     .titulo {
         display: flex;
         flex-direction: row;
     }
+
     .txtP {
         padding-left: 30px;
     }
+
     div div {
         text-align: center;
     }
+
     ul {
         float: left;
     }
-    .opciones {
-        margin-top: 5rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+
+
     .imgdestino {
         margin-top: 50px;
         width: auto;
     }
+
     #nombre {
         font-size: 50px;
         margin: 0;
         text-transform: uppercase;
     }
+
     .avg {
         width: 18rem;
     }
+
     .est {
         margin-left: 4rem !important;
         margin-top: 0px !important;
         width: 18rem;
     }
+
     .div-Distacia {
         display: flex;
         flex-direction: row;
@@ -130,86 +172,111 @@ main {
 
 @media (min-width: 1281px) {
     li {
-        float: left;
-        margin-right: 20px;
+        margin-right: 1.4vw;
+        font-size: 1.2vw;
     }
-    .bordeDestination {
-        cursor: pointer;
-        padding: 7px;
-    }
+
+
     main {
-        color: white;
-        display: flex;
-        width: 100%;
+
         flex-direction: row;
+        height: 100vh;
+        margin-top: 0;
     }
+
+    .bordeDestination {
+        padding: 0.5vw;
+    }
+
     .avg {
-        width: 18rem;
+        width: 20vw;
     }
+
+    .avg p,
+    .est p {
+        font-size: 1.2vw;
+    }
+
     .est {
-        margin-left: 4rem !important;
+        margin-left: 4.5vw !important;
         margin-top: 0px !important;
-        width: 18rem;
+        width: 20vw;
     }
+
+    #viaje,
+    #distancia {
+        font-size: 2.5vw;
+    }
+
     ul {
         margin-left: 0;
         margin-top: 0;
         display: block;
+        margin-bottom: 2vw;
     }
+
     .txt {
-        margin-top: 11rem;
         width: auto;
         align-items: initial;
     }
+
     .opciones {
         width: 55%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        margin-top: 5rem;
     }
+
     div div {
         text-align: left;
     }
+
     #nombre {
-        font-size: 100px;
-        font-size: 75px;
-        margin: 0;
-        margin-top: -15px;
-        text-transform: uppercase;
+        font-size: 5.3vw;
+        margin-top: -1vw;
     }
+
     #descripcion {
-        line-height: 30px;
-        width: 480px;
+        line-height: 2.1vw;
+        width: 33vw;
+        font-size: 1.2vw;
         margin: 0;
     }
+
     .flotante {
         float: left;
         margin: 0 !important;
     }
+
     #linea {
-        width: 480px;
-        height: 2px;
+        width: 35vw;
+        height: 0.2vw;
         background-color: white;
-        margin: 0 !important;
+        margin: 0.5vw !important;
     }
+
     .datosinfo {
-        font-size: 32px;
+        font-size: 2.5vw;
         margin: 0;
         text-transform: uppercase
     }
+
     .titulo {
-        font-size: 27px;
+        font-size: 2vw;
         width: auto;
     }
+
     .imgdestino {
-        width: 350px;
-        margin-top: 8rem;
+        width: 25vw;
+        margin-top: 3vw;
     }
-    .div-Distacia {
-        display: flex;
-        flex-direction: row;
-        margin: 0 !important;
+
+
+    .p01 {
+        color: darkgrey;
+        margin-right: 1.2vw !important;
+    }.estructuraImg {
+        height: 28vw; 
+    }
+    .info {
+        height: 24vw;
     }
 }

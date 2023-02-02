@@ -1,26 +1,33 @@
-.btn {
-    background-color: gray;
-    width: 22px;
-    height: 22px;
+.btn { 
     float: left;
-    margin-right: 25px;
-    border-radius: 25px;
+    background-color: gray;
     cursor: pointer;
 }
 
-@keyframes animationJAnk {
-    from {
+@keyframes openEfectCrew {
+    from { 
         opacity: 0%;
     }
     to {
         opacity: 100%;
     }
 }
-
+@keyframes openEfectReverseCrew {
+    from { 
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
 main {
     color: white;
-    animation-name: animationJank;
+    animation-name: openEfectCrew;
     animation-duration: 0.5s;
+}
+#txt2,
+#img{
+    animation-duration: 0.25s;
 }
 
 @media (min-width: 320px) {
@@ -29,16 +36,15 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        height: 100vh;
     }
     #img img {
         width: 80%;
         margin-top: auto;
     }
-    #img {
-        display: flex;
+    #img { 
         justify-content: center;
-        margin-top: -21rem;
-        height: 100vh;
+        margin-top: auto; 
         z-index: 0;
     }
     #txt1 p {
@@ -52,6 +58,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 4rem; 
         text-align: center;
         z-index: 1;
     }
@@ -62,113 +69,83 @@ main {
         color: gray;
     }
     #name {
-        text-transform: uppercase;
-        text-transform: uppercase;
+        text-transform: uppercase; 
         font-size: 26px;
         margin: 0;
     }
     #bio {
         line-height: 27px;
     }
+    .btn {
+
+        margin-right: 25px;
+        border-radius: 25px;
+        width: 22px;
+        height: 22px;} 
 }
 
-@media (min-width: 768px) {
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-    #img img {
-        margin-top: auto;
-    }
+@media (min-width: 768px) {  
     #img {
-        display: flex;
-        justify-content: center;
-        margin-top: -20rem;
-        height: 100vh;
-        z-index: 0;
-    }
-    #txt1 p {
-        float: left;
-    }
+        display: flex;  
+    } 
     #txt1 #p1 {
         color: gray;
         margin-right: 10px;
-    }
-    #info {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-top: 5rem;
-        z-index: 1;
-    }
-    #role {
-        text-transform: uppercase;
-        margin: 0;
-        font-size: 20px;
-        color: gray;
-    }
-    #name {
-        text-transform: uppercase;
-        text-transform: uppercase;
-        font-size: 26px;
-        margin: 0;
-    }
-    #bio {
-        line-height: 27px;
-    }
+    } 
+    .btn {
+
+        margin-right: 25px;
+        border-radius: 25px;
+        width: 22px;
+        height: 22px;}
 }
 
 @media (min-width: 1281px) {
     main {
-        display: flex;
         flex-direction: row;
     }
-    #img {
-        height: 100vh;
-        display: flex;
+    #img { 
+        width: 50vw;
         margin-top: auto;
     }
-    #img img {
-        margin-top: auto;
-        margin-right: 10rem;
-        width: 50vh;
+    #img img {  
+        width: 29vw;
     }
     #info {
         display: block;
-        margin: auto 0;
-        margin-left: 0px;
-        margin-left: 10rem;
+        margin: auto 0; 
+        margin-left: 10vw;
+        width: 40vw;
     }
-    #txt1 p {
-        float: left;
+    #txt1 p { 
+        font-size: 1.3vw;
     }
     #txt1 #p1 {
         color: gray;
-        margin-right: 10px;
+        margin-right: 0.7vw;
     }
     #txt2 {
-        margin-top: 10rem;
+        margin-top: 7vw;
         text-align: left;
+        height: 14vw;
     }
-    #role {
-        text-transform: uppercase;
-        margin: 0;
-        font-size: 30px;
-        color: gray;
+    #role { 
+        font-size: 2.2vw; margin-bottom: 1.2vw;
     }
-    #name {
-        text-transform: uppercase;
-        text-transform: uppercase;
-        font-size: 46px;
-        margin: 0;
+    #name { 
+        font-size: 3.1vw; 
     }
-    #bio {
-        line-height: 27px;
-        padding: 0;
-        padding-right: 136px;
+    #bio { 
+        margin: 1vw 0;
+        line-height: 1.7vw;
+        font-size: 1.2vw;
     }
     #txt3 {
-        margin-top: 5rem;
-    }
+        margin-top: 6vw;
+    }.btn {
+
+        margin-right: 1.5vw;
+        border-radius: 1.5vw;
+        width: 1.5vw;
+        height: 1.5vw;}
 }

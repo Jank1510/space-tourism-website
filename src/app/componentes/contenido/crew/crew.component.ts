@@ -32,46 +32,78 @@ export class CrewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayAnimation = ''
+  nameAnimation = ''
   primero() {
-    this.role = this.dataJson.crew[0].role
-    this.name = this.dataJson.crew[0].name
-    this.bio = this.dataJson.crew[0].bio
-    this.imgCrew = this.dataJson.crew[0].images.png
-    this.selecPrimero = 'white'
-    this.selecSegundo = 'gray'
-    this.selecTercero = 'gray'
-    this.selecCuarto = 'gray'
-
+    this.nameAnimation = 'openEfectReverseCrew'
+    setTimeout(() => {
+      this.displayAnimation = 'none'
+      setTimeout(() => {
+        this.nameAnimation = 'openEfectCrew'
+        this.displayAnimation = 'block'
+        this.role = this.dataJson.crew[0].role
+        this.name = this.dataJson.crew[0].name
+        this.bio = this.dataJson.crew[0].bio
+        this.imgCrew = this.dataJson.crew[0].images.png
+        this.selecPrimero = 'white'
+        this.selecSegundo = 'gray'
+        this.selecTercero = 'gray'
+        this.selecCuarto = 'gray'
+      }, 1);
+    }, 250);
   }
   segundo() {
-    this.role = this.dataJson.crew[1].role
-    this.name = this.dataJson.crew[1].name
-    this.bio = this.dataJson.crew[1].bio
-    this.imgCrew = this.dataJson.crew[1].images.png
-    this.selecPrimero = 'gray'
-    this.selecSegundo = 'white'
-    this.selecTercero = 'gray'
-    this.selecCuarto = 'gray'
+    this.nameAnimation = 'openEfectReverseCrew'
+    setTimeout(() => {
+      this.displayAnimation = 'none'
+      setTimeout(() => {
+        this.nameAnimation = 'openEfectCrew'
+        this.displayAnimation = 'block'
+        this.role = this.dataJson.crew[1].role
+        this.name = this.dataJson.crew[1].name
+        this.bio = this.dataJson.crew[1].bio
+        this.imgCrew = this.dataJson.crew[1].images.png
+        this.selecPrimero = 'gray'
+        this.selecSegundo = 'white'
+        this.selecTercero = 'gray'
+        this.selecCuarto = 'gray'
+      }, 1);
+    }, 250);
   }
   tercero() {
-    this.role = this.dataJson.crew[2].role
-    this.name = this.dataJson.crew[2].name
-    this.bio = this.dataJson.crew[2].bio
-    this.imgCrew = this.dataJson.crew[2].images.png
-    this.selecPrimero = 'gray'
-    this.selecSegundo = 'gray'
-    this.selecTercero = 'white'
-    this.selecCuarto = 'gray'
+    this.nameAnimation = 'openEfectReverseCrew'
+    setTimeout(() => {
+      this.displayAnimation = 'none'
+      setTimeout(() => {
+        this.nameAnimation = 'openEfectCrew'
+        this.displayAnimation = 'block'
+        this.role = this.dataJson.crew[2].role
+        this.name = this.dataJson.crew[2].name
+        this.bio = this.dataJson.crew[2].bio
+        this.imgCrew = this.dataJson.crew[2].images.png
+        this.selecPrimero = 'gray'
+        this.selecSegundo = 'gray'
+        this.selecTercero = 'white'
+        this.selecCuarto = 'gray'
+      }, 1);
+    }, 250);
   }
   cuarto() {
-    this.role = this.dataJson.crew[3].role
-    this.name = this.dataJson.crew[3].name
-    this.bio = this.dataJson.crew[3].bio
-    this.imgCrew = this.dataJson.crew[3].images.png
-    this.selecPrimero = 'gray'
-    this.selecSegundo = 'gray'
-    this.selecTercero = 'gray'
-    this.selecCuarto = 'white'
+    this.nameAnimation = 'openEfectReverseCrew'
+    setTimeout(() => {
+      this.displayAnimation = 'none'
+      setTimeout(() => {
+        this.nameAnimation = 'openEfectCrew'
+        this.displayAnimation = 'block'
+        this.role = this.dataJson.crew[3].role
+        this.name = this.dataJson.crew[3].name
+        this.bio = this.dataJson.crew[3].bio
+        this.imgCrew = this.dataJson.crew[3].images.png
+        this.selecPrimero = 'gray'
+        this.selecSegundo = 'gray'
+        this.selecTercero = 'gray'
+        this.selecCuarto = 'white'
+      }, 1);
+    }, 250);
   }
 }
