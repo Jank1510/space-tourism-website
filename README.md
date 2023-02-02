@@ -16,7 +16,7 @@
 - GitHub - [@jank1510](https://github.com/Jank1510)
 - Linkedin - [Jehan Carlos Hurtado Guerrero](https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/) 
 
-## Descriptioon  
+## Description  
 Multi page space tourism website with specific details getting the data from a .JSON developed in angular, using aos librery animation.
  
 
