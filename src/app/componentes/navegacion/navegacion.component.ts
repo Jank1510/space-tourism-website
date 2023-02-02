@@ -14,18 +14,25 @@ export class NavegacionComponent implements OnInit {
   barratechnology: any
   ocultarNav!: boolean
   ocultarNavHamburger!: boolean
-  ocultarContenidoHamburger:boolean
+  ocultarContenidoHamburger: boolean
   pixelesPantalla: any
   home: any
   crew: any
   technology: any
   destination: any
-
+  boxVariable!: string
   constructor(private img: AppComponent, private router: Router) {
-
-    this.ocultarContenidoHamburger=false
-    this.HOME()
     this.pixelesPantalla = (this.img.PixelesPantalla())
+    //esta condicion arregla el tamaño de el box shadow de los items de la navegacion
+    if (this.pixelesPantalla >= 1281) {
+      this.boxVariable = 'white 0px 2.132vw 0px -0.55vw'
+    } else {
+      if (this.pixelesPantalla < 1281) {
+        this.boxVariable = 'white 0px 30.7px 0px -8px'
+      }
+    }
+    this.ocultarContenidoHamburger = false
+    this.HOME()
     if (this.pixelesPantalla < (768)) {
       img.cambiarfondo('url(./assets/home/background-home-mobile.jpg')
       this.ocultarNav = false
@@ -43,6 +50,7 @@ export class NavegacionComponent implements OnInit {
         }
       }
     }
+
   }
 
   ngOnInit(): void {
@@ -132,10 +140,18 @@ export class NavegacionComponent implements OnInit {
         }
       }
     }
+    //esta condicion arregla el tamaño de el box shadow de los items de la navegacion
+    if (pixelesPantallaENMovimiento >= 1281) {
+      this.boxVariable = 'white 0px 2.132vw 0px -0.55vw'
+    } else {
+      if (pixelesPantallaENMovimiento < 1281) {
+        this.boxVariable = 'white 0px 30.7px 0px -8px'
+      }
+    }
   }
   HOME() {
-    this.ocultarContenidoHamburger=false
-    this.barrahome = 'white 0px 30px 0px -8px'
+    this.ocultarContenidoHamburger = false
+    this.barrahome = this.boxVariable
     this.barradestination = 'none'
     this.barracrew = 'none'
     this.barratechnology = 'none'
@@ -158,9 +174,9 @@ export class NavegacionComponent implements OnInit {
     }
   }
   DESTINATION() {
-    this.ocultarContenidoHamburger=false
+    this.ocultarContenidoHamburger = false
     this.barrahome = 'none'
-    this.barradestination = 'white 0px 30px 0px -8px'
+    this.barradestination = this.boxVariable
     this.barracrew = 'none'
     this.barratechnology = 'none'
     this.router.navigate(['DESTINATION'])
@@ -182,10 +198,10 @@ export class NavegacionComponent implements OnInit {
     }
   }
   CREW() {
-    this.ocultarContenidoHamburger=false
+    this.ocultarContenidoHamburger = false
     this.barrahome = 'none'
     this.barradestination = 'none'
-    this.barracrew = 'white 0px 30px 0px -8px'
+    this.barracrew = this.boxVariable
     this.barratechnology = 'none'
     this.router.navigate(['CREW'])
     this.home = false
@@ -206,11 +222,11 @@ export class NavegacionComponent implements OnInit {
     }
   }
   TECHNOLOGY() {
-    this.ocultarContenidoHamburger=false
+    this.ocultarContenidoHamburger = false
     this.barrahome = 'none'
     this.barradestination = 'none'
     this.barracrew = 'none'
-    this.barratechnology = 'white 0px 30px 0px -8px'
+    this.barratechnology = this.boxVariable
     this.router.navigate(['TECHNOLOGY'])
     this.home = false
     this.destination = false
@@ -229,11 +245,11 @@ export class NavegacionComponent implements OnInit {
       }
     }
   }
-  MostrarContenido(){
-    if (this.ocultarContenidoHamburger===false) {      
-    this.ocultarContenidoHamburger=true
-    }else{
-    this.ocultarContenidoHamburger=false
+  MostrarContenido() {
+    if (this.ocultarContenidoHamburger === false) {
+      this.ocultarContenidoHamburger = true
+    } else {
+      this.ocultarContenidoHamburger = false
     }
   }
 

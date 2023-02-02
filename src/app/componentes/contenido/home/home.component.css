@@ -11,7 +11,8 @@
 main {
     color: white;
     animation-name: animationJank;
-    animation-duration: 0.5s;
+        height: 100vh;
+        animation-duration: 0.5s;
 }
 
 .float {
@@ -83,7 +84,7 @@ display: none;
     }
 
     .contenedorCirculo {
-        margin: 0 auto;
+        margin: auto;
     }
 
     .txt {
@@ -106,10 +107,7 @@ display: none;
         font-size: 17px;
         margin: 0;
     }
-
-    .imagenCirculo {
-        margin: 5.75rem 0;
-    }
+ 
 
     .circulotxt {
         color: black;
@@ -169,7 +167,6 @@ display: none;
     main {
         display: flex;
         flex-direction: row;
-        height: 100vh;
     }
 
     .contenedorCirculo {

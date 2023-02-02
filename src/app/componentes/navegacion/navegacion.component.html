@@ -3,10 +3,10 @@
     <div>
         <img src="./assets/shared/logo.svg" alt="logo">
     </div>
-    <nav data-aos="fade-left"> 
+    <nav> 
         <div id="liniaNav"></div>
 
-        <div *ngIf="ocultarNav">
+        <div *ngIf="ocultarNav" class="navDesktop">
             <ul>
                 <li [ngStyle]="{'box-shadow': barrahome}" (click)="HOME()"><b>00</b> HOME</li>
                 <li [ngStyle]="{'box-shadow': barradestination}" (click)="DESTINATION()"><b>01</b> DESTINATION</li>

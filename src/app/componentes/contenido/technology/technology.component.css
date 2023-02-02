@@ -24,7 +24,7 @@ div {
 
 main {
     animation-name: animationJank;
-    animation-duration: 0.5s;
+        animation-duration: 0.5s;
 }
 
 @media (min-width: 320px) {
@@ -40,8 +40,7 @@ main {
     main {
         text-align: initial;
         display: flex;
-        flex-direction: column;
-        height: 100%;
+        flex-direction: column; 
     }
 
     .opciones {
@@ -140,13 +139,16 @@ main {
     div div img {
         width: 43vh;
     }
+    main{
+        height: 100vh;
+
+    }
 
 }
 
 @media (min-width: 1281px) {
     main {
         flex-direction: row;
-        height: 100vh;
     }
 
     .divContenidoNum {

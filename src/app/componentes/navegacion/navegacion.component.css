@@ -38,7 +38,7 @@ header {
         z-index: 2;
     }
     nav #menuHamburgesa ul {
-        background-color: rgba(2, 2, 2, 0.85);
+        background-color: rgba(2, 2, 2, 0.92);
         z-index: 3;
         position: absolute;
         color: white;
@@ -103,6 +103,10 @@ header {
         margin-top: 25px;
         margin-bottom: 18.2px;
     }
+
+    .navDesktop{
+        height: 4.25rem;
+    }
 }
 
 @media (min-width: 1281px) {
@@ -135,5 +139,8 @@ header {
     nav div ul {margin-top: 1.6vw;
         margin-bottom: 1.3vw;
         padding-left: 3.5vw;
+    }
+    .navDesktop{
+        height: 4.6vw;
     }
 }

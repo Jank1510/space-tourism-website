@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'HOME', component: HomeComponent },
   { path: 'TECHNOLOGY', component: TechnologyComponent},
   { path: 'CREW', component:CrewComponent},
-  { path: 'DESTINATION', component:DestinationComponent}
+  { path: 'DESTINATION', component:DestinationComponent},
+  {path: '', component: HomeComponent},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({

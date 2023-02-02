@@ -1,32 +1,37 @@
-.btn { 
+.btn {
     float: left;
     background-color: gray;
     cursor: pointer;
 }
 
 @keyframes openEfectCrew {
-    from { 
+    from {
         opacity: 0%;
     }
+
     to {
         opacity: 100%;
     }
 }
+
 @keyframes openEfectReverseCrew {
-    from { 
+    from {
         opacity: 100%;
     }
+
     to {
         opacity: 0%;
     }
 }
+
 main {
     color: white;
     animation-name: openEfectCrew;
     animation-duration: 0.5s;
 }
+
 #txt2,
-#img{
+#img {
     animation-duration: 0.25s;
 }
 
@@ -36,116 +41,147 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 100vh;
     }
+
     #img img {
         width: 80%;
         margin-top: auto;
     }
-    #img { 
+
+    #img {
         justify-content: center;
-        margin-top: auto; 
+        margin-top: auto;
         z-index: 0;
     }
+
     #txt1 p {
         float: left;
     }
+
     #txt1 #p1 {
         color: gray;
         margin-right: 10px;
     }
+
     #info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 4rem; 
+        margin-top: 4rem;
         text-align: center;
         z-index: 1;
     }
+
     #role {
         text-transform: uppercase;
         margin: 0;
         font-size: 20px;
         color: gray;
     }
+
     #name {
-        text-transform: uppercase; 
+        text-transform: uppercase;
         font-size: 26px;
         margin: 0;
     }
+
     #bio {
         line-height: 27px;
     }
+
     .btn {
 
         margin-right: 25px;
         border-radius: 25px;
         width: 22px;
-        height: 22px;} 
+        height: 22px;
+    }
 }
 
-@media (min-width: 768px) {  
+@media (min-width: 768px) {
     #img {
-        display: flex;  
-    } 
+        display: flex;
+    }
+
     #txt1 #p1 {
         color: gray;
         margin-right: 10px;
-    } 
+    }
+
     .btn {
 
         margin-right: 25px;
         border-radius: 25px;
         width: 22px;
-        height: 22px;}
+        height: 22px;
+    }
+
+    main {
+        height: 100vh;
+
+    }
 }
 
 @media (min-width: 1281px) {
     main {
         flex-direction: row;
     }
-    #img { 
+
+    #img {
         width: 50vw;
         margin-top: auto;
     }
-    #img img {  
+
+    #img img {
         width: 29vw;
     }
+
     #info {
         display: block;
-        margin: auto 0; 
+        margin: auto 0;
         margin-left: 10vw;
         width: 40vw;
     }
-    #txt1 p { 
+
+    #txt1 p {
         font-size: 1.3vw;
     }
+
     #txt1 #p1 {
         color: gray;
         margin-right: 0.7vw;
     }
+
     #txt2 {
         margin-top: 7vw;
         text-align: left;
         height: 14vw;
     }
-    #role { 
-        font-size: 2.2vw; margin-bottom: 1.2vw;
+
+    #role {
+        font-size: 2.2vw;
+        margin-bottom: 1.2vw;
     }
-    #name { 
-        font-size: 3.1vw; 
+
+    #name {
+        font-size: 3.1vw;
     }
-    #bio { 
+
+    #bio {
         margin: 1vw 0;
         line-height: 1.7vw;
         font-size: 1.2vw;
     }
+
     #txt3 {
         margin-top: 6vw;
-    }.btn {
+    }
+
+    .btn {
 
         margin-right: 1.5vw;
         border-radius: 1.5vw;
         width: 1.5vw;
-        height: 1.5vw;}
+        height: 1.5vw;
+    }
 }

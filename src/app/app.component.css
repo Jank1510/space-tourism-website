@@ -1,12 +1,34 @@
-div {
-    display: inline-table;
-    position: absolute;
+div { 
+    position: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}  
+footer a {
+    text-decoration: none;
+    color: rgb(255, 177, 177);
+}
+
+@media (min-width: 320px) {
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1281px) {
+    footer {
+        font-size: 1.2vw;
+    }
 }

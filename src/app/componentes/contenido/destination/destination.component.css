@@ -27,7 +27,7 @@ main {
     color: white;
     display: flex;
     width: 100%;
-    align-items: center;
+        align-items: center;
 }
 
 .animation {
@@ -168,6 +168,10 @@ main {
         margin: 0 !important;
         justify-content: center;
     }
+    main{
+        height: 100vh;
+
+    }
 }
 
 @media (min-width: 1281px) {
@@ -180,7 +184,6 @@ main {
     main {
 
         flex-direction: row;
-        height: 100vh;
         margin-top: 0;
     }
 
